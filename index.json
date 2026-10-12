@@ -1,0 +1,11 @@
+{
+  "org": "python-openapi",
+  "repo": "openapi-spec-validator",
+  "versions": [
+    {
+      "commit": "2121137e4832871202b96a276b225b90f3aece50",
+      "tag": "0.9.0",
+      "parsed_at": "2026-10-12T22:35:24.323708+00:00"
+    }
+  ]
+}

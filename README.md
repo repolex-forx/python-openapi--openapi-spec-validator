@@ -1,1 +1,177 @@
-Initializing
+# Repolex Knowledge Graph of python-openapi/openapi-spec-validator
+
+RDF knowledge graph data for [python-openapi/openapi-spec-validator](https://github.com/python-openapi/openapi-spec-validator), parsed by [repolex](https://repolex.ai).
+
+> **Note**: This data is experimental and subject to change without notice.
+
+## How to use this data
+
+The easiest way to get started is to install the [rlex](https://github.com/repolex-ai/rlex) query tool:
+
+```bash
+cargo install --git https://github.com/repolex-ai/rlex
+```
+
+Verify the install:
+
+```bash
+rlex --help
+```
+
+**rlex is designed to be used primarily by LLMs in a terminal.** Start up your favorite AI assistant and ask it to use rlex. It handles the SPARQL — you just ask questions in plain English.
+
+To load this repo's data:
+
+```bash
+rlex download python-openapi/openapi-spec-validator
+```
+
+Consult `rlex --help` for other options, including SPARQL queries, HTTP server, and interactive visualization.
+
+## Data structure
+
+All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) (`.nq.gz`), a standard RDF format that can be loaded into any triplestore or graph database.
+
+```
+.
+├── aggregate
+│   ├── ast
+│   │   └── 2121137e4832871202b96a276b225b90f3aece50
+│   │       └── chunk-001.nq.gz
+│   └── repolex
+│       └── 2121137e4832871202b96a276b225b90f3aece50
+│           └── chunk-001.nq.gz
+├── blob
+│   ├── 0c10664275317a89dbfc2d0f4236d404177f8e63.nq.gz
+│   ├── 0e0c43406213572f605a43329d4937575b07db11.nq.gz
+│   ├── 0fe105200e626cd463988e5d085949afa427ffd9.nq.gz
+│   ├── 158f5ba10860f2ee0320abe5a8972d25a90bd7c8.nq.gz
+│   ├── 17a347d2dc4198c413bfe6cacd80bece685cd3d5.nq.gz
+│   ├── 1ff16bf55f96be3147b1f74d8b6e6fad672bf43f.nq.gz
+│   ├── 2119f51099bf37e4fdb6071dce9f451ea44c62dd.nq.gz
+│   ├── 2371067dedc9b6926e5751ce950b2a102e25a02e.nq.gz
+│   ├── 278440563d52cbc8dbea10655c7526ccf9fd2368.nq.gz
+│   ├── 2fc94052850ac2e5449afe955f6bdbf36d31262a.nq.gz
+│   ├── 307c89a8e7e531b9da8d512d9e22651c28222ac8.nq.gz
+│   ├── 3315706e30f0c7e89382a425f49cfd0fea75829a.nq.gz
+│   ├── 34dfe0f0062fbd3ec6625ce1d4074fa0f984923f.nq.gz
+│   ├── 353a19d8fffdfaa889cfc2b1dd9716347921f084.nq.gz
+│   ├── 361d3f96bd02d2943efa794ad357be3d00d1a990.nq.gz
+│   ├── 36a105c4a8903c3116a86c8621d84d4cbbc8a1de.nq.gz
+│   ├── 37c1f43363e495c42415fdddb4b7eb3299c72df4.nq.gz
+│   ├── 394cb4786eb153e06d5c3361309203466d3de74a.nq.gz
+│   ├── 39a032c80df93ff03cc6e8456e17fc749b191979.nq.gz
+│   ├── 3aa08a19617f6760d2e910e1403bbebdee7733af.nq.gz
+│   ├── 3cff5c55c6ac87e5a27180454a086fa66c713c18.nq.gz
+│   ├── 434a9cab744164dd5af837d1b8c4210bf0da6e54.nq.gz
+│   ├── 46657ef3e189bab98695d446676b88e498ee9a0f.nq.gz
+│   ├── 48c42c62f56a17907311e95a069a6cea29e6e726.nq.gz
+│   ├── 4ce98dd644d2fd6a6606ec1a0a677cdd17feac83.nq.gz
+│   ├── 55c681408d5569427cb291850a52226f83151e5d.nq.gz
+│   ├── 55ff6d5614ff37a9fa5103180e03726f62f9eb46.nq.gz
+│   ├── 5a02f486e33464b5a6d5fad303210ab26d0ba35c.nq.gz
+│   ├── 5af0f9aa3d0d3d9020914b44cbdb24e805456245.nq.gz
+│   ├── 5b308b04f7906272efd3862e54363cdd3c2e54c6.nq.gz
+│   ├── 5bb12220f9dc72958f1f468c60f61fcd0a7554f6.nq.gz
+│   ├── 5bbb5c6d9f688d676ee2c164bea5fd8079dac29b.nq.gz
+│   ├── 5e7ce0ea8aad398ec163414144cf0ca3983b2b5d.nq.gz
+│   ├── 615bc7a3fde2fd5b797dece3e9e03c780f2708a7.nq.gz
+│   ├── 65ee2535047fc7c28962252cecd1ed3679312900.nq.gz
+│   ├── 6a0378f9c7c0a926bf4e80d971c4364da99f3a82.nq.gz
+│   ├── 6e8eab891481ccf1f27409377dcdefc4ca571979.nq.gz
+│   ├── 7277c377841e9151c61a3598ef4d17fd93d020e3.nq.gz
+│   ├── 73e81d679fe1ae6c9ba71298fbae86d2b7275e81.nq.gz
+│   ├── 7648d79398608145f594b2d9e1ef40440adcdc5f.nq.gz
+│   ├── 776f5eb1bb8720d5f4e7a29d02dde00dfaedc570.nq.gz
+│   ├── 778133684b79480f05211639694e19f3e964f054.nq.gz
+│   ├── 77e3c730781b5cadd9f109956f79ea58d5492b59.nq.gz
+│   ├── 7919459252195adb888a3821a96309d6acbd200d.nq.gz
+│   ├── 796db96ba5c8c9637c51fe70aa7e49c6376c56db.nq.gz
+│   ├── 7b414d8778b8631e7f7301d2b809660ff72c70c2.nq.gz
+│   ├── 7e3a3d2e5fe24a833c82178c4dbab24e72859c44.nq.gz
+│   ├── 7ed987ff63e423bf492e005ffb59c07a0d2caab9.nq.gz
+│   ├── 7fdde7e46300877b9205684879387095f4bd9fe5.nq.gz
+│   ├── 814636569e9a5d97836d0ce7a6ab8a03c2c9f962.nq.gz
+│   ├── 8217cb5f38a62c3d66d1921d218acd166b0b63e7.nq.gz
+│   ├── 8734958b4a4297ee75d333f991ba11f6b8958a9f.nq.gz
+│   ├── 87be795d334d43e4e7f3230b6dafc0c3817db871.nq.gz
+│   ├── 8dada3edaf50dbc082c9a125058f25def75e625a.nq.gz
+│   ├── 8ebc13cb4a3c23ed34cfcc2c0fdcc5e1b3944234.nq.gz
+│   ├── 8ffe77b8ca649dff9634bde5c4bb03f15f917825.nq.gz
+│   ├── 9055b58020e25db446d6459e0cf04d88f65face1.nq.gz
+│   ├── 9196e34db6bee3e26c09b488336816e7ea9c7dbf.nq.gz
+│   ├── 91a5cbb95a1405b048d01c13b5ff7586bf3176aa.nq.gz
+│   ├── 95ab03fba5f54ddb428494344ac9c97981895621.nq.gz
+│   ├── 988df3765e1d63146327130f503165104a58a51f.nq.gz
+│   ├── 9af846528a0e406c6901c36e33acf8a7b87f21ab.nq.gz
+│   ├── 9e26dfeeb6e641a33dae4961196235bdb965b21b.nq.gz
+│   ├── 9e77b38e6e9d2dfd6fdb0f1b68260849db192d0c.nq.gz
+│   ├── a2ae6b2354d00e5f5f4873e8eeb7bb874f172da1.nq.gz
+│   ├── a420f6d799200fe60b521a255698bb304df1c2f6.nq.gz
+│   ├── a86999249b465d879a8f644d51ae1c8bc93a82ba.nq.gz
+│   ├── aa54c239e8bc2f42a82f201513cede2bfc8714d2.nq.gz
+│   ├── ac0480a3b09059e1168285a35f091643fcf88452.nq.gz
+│   ├── ad15027e4956c0d1292e736a85a6c87fb8b19ebc.nq.gz
+│   ├── ae9464f4d58b4c16fb33345afaae6eccd2eb0a1f.nq.gz
+│   ├── b57b3bae9acd040fdd15ddb3dc45129000343b0c.nq.gz
+│   ├── b6e6c69fc619b3b8617ba967eb8fa9917502c52f.nq.gz
+│   ├── bc76ee358f478ea296f8492c41c5583133842a0b.nq.gz
+│   ├── bcfc17a05379aa7ff703d8a3c3da7b7abc411aba.nq.gz
+│   ├── bd95f2ad4b92dc3517ed39898ac914f2c3ab691e.nq.gz
+│   ├── bfc65c6a19095dc72df186d8cbe523b222922058.nq.gz
+│   ├── c13b2504ed7d3a509d2bbb88bdb511bd12a4aeb1.nq.gz
+│   ├── c1d704b49aae6227fb4f1c4f8c648a87ab938720.nq.gz
+│   ├── c2b492760695fa47382f2dc8f79e76a1c7a4ff41.nq.gz
+│   ├── c70af0515e5a00bc95d01f47d2d317d2357e9d9e.nq.gz
+│   ├── cd53f789a9f563b853c44669c7a533c3a26d4539.nq.gz
+│   ├── ce3ae1e1c62107fc142087d1f9ed8ae59b1a300d.nq.gz
+│   ├── d1cabaeb130d891f710b72a3a2bd8790ed89f18d.nq.gz
+│   ├── d6fbb07af6b855f002d12f871008060a8b4abd81.nq.gz
+│   ├── d89a32dfe569cc3d8c6a879c432da48adcb96c22.nq.gz
+│   ├── dc78953ea0c9e62af6c4281fbfb1e1d934ca0479.nq.gz
+│   ├── dfa3a7ce12ed2706c7e34dbb218a4970745c233d.nq.gz
+│   ├── dfbdffc2ca2c46bf51be995bb81318ebc04a8d49.nq.gz
+│   ├── e136aaf951384058c8e8524c1025c7fc965d30fa.nq.gz
+│   ├── e31278208b189aad8f3dc40df7e5527dfd03d2e3.nq.gz
+│   ├── e4dec7ddc978471d342a4374a6a14b8c3a4d85a0.nq.gz
+│   ├── e69de29bb2d1d6434b8b29ae775ad8c2e48c5391.nq.gz
+│   ├── e7535813b60670160574ec26116d0a8cab2946d7.nq.gz
+│   ├── f4054972f5c5de81e2e4e16a0249fb5bb78c99e4.nq.gz
+│   ├── f67f5e77a2da43fe574afa2ba6d550ef9c760980.nq.gz
+│   ├── fc46ac5353e6c803535b369246f3c6fb88b13dd4.nq.gz
+│   └── fe25636ccc0a96dc5396e2a35b49683b5152d050.nq.gz
+├── branch
+│   └── branch.nq.gz
+├── commit
+│   └── commit.nq.gz
+├── filetree
+│   └── 2121137e4832871202b96a276b225b90f3aece50.nq.gz
+├── issue
+│   └── issue.nq.gz
+├── pr
+│   └── pr.nq.gz
+└── tag
+    └── tag.nq.gz
+
+13 directories, 106 files
+```
+
+| Directory | What it contains |
+|-----------|-----------------|
+| `blob/` | Per-file AST graphs, content-addressed by git blob SHA. Each file in the source repo gets its own graph. |
+| `aggregate/ast/` | Combined AST graph per parsed commit. Merges all blob graphs for a snapshot of the entire codebase at that point. |
+| `aggregate/lsp/` | Language Server Protocol enrichment: resolved symbols, definitions, references, and type information. |
+| `aggregate/dataflow/` | Interprocedural data flow edges between functions and modules. |
+| `aggregate/repolex/` | Combined graph (AST + LSP + dataflow) per commit. |
+| `commit/` | Git commit metadata (author, date, message, parent links). |
+| `branch/` | Branch metadata. |
+| `tag/` | Tag metadata. |
+| `filetree/` | File tree snapshots per commit (which files existed and their blob SHAs). |
+| `audit/` | Code architecture and graph audit reports per commit. |
+
+## Source repository
+
+[python-openapi/openapi-spec-validator](https://github.com/python-openapi/openapi-spec-validator)
+
+---
+*Parsed on 2026-10-12 by [repolex](https://repolex.ai)*
