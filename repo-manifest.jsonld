@@ -8,8 +8,9 @@
     {
       "@id": "https://repolex.ai/r/python-openapi/openapi-spec-validator/commit/2121137e4832871202b96a276b225b90f3aece50",
       "git:hexsha": "2121137e4832871202b96a276b225b90f3aece50",
-      "repolex:parseStatus": "ast_complete",
-      "git:tagName": "0.9.0"
+      "repolex:parseStatus": "parsed",
+      "git:tagName": "0.9.0",
+      "repolex:parsedAt": "2026-10-12T22:35:24.305591+00:00"
     },
     {
       "@id": "https://repolex.ai/r/python-openapi/openapi-spec-validator/commit/4b9db8693970a0fbdf0c9c0586fff9217295ef8e",
